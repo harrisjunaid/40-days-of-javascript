@@ -1,6 +1,6 @@
 console.log("Day 03");
 
-// Operator - Symbols + - * /
+// Operator - Symbols + - * / ** % -- ++
 // Operands - x+y, x and y are the operands.
 // Expression x = 2 / 3 + 4
 
@@ -40,16 +40,17 @@ let x = 10;
 
  // Comparison Operators
 console.log("**** Comparison Operators ****")
-console.log(0 == false)
-console.log(3 == '3')
-console.log(3 != '3')
+console.log(0 == false) // true
+console.log(0 === false) // false
+console.log(3 == '3') // true
+console.log(3 != '3') // false
 
 console.log(3 === '3')
 
 console.log(null === null)
 console.log(undefined === undefined)
 
-// NaN = Not a Number
+// NaN = Not a Number // always false
 
 let obj1 = {'name': 'tapaScript'} // XX0011
 let obj2 = {'name': 'tapaScript'} // YY022
@@ -77,6 +78,8 @@ console.log(true && true); // true
 console.log(false && true); // false
 
 console.log("Cow" && "Horse"); // "Horse"
+console.log("Cow" || "Horse"); // "Cow"
+
 
 4 > 5 && 4 === 6
 

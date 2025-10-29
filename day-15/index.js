@@ -8,6 +8,7 @@ console.log("Day 15: JavaScript Array Master Course");
     // index starts with 0
     // index end with length - 1
 
+
     const salad = ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑"];
 
     function Car(model) {
@@ -17,6 +18,7 @@ console.log("Day 15: JavaScript Array Master Course");
     const bmwCar = new Car("BMW X1");
     console.log(bmwCar);
 
+    // array constructor function
     const anotherSalad = new Array("🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑");
 
     console.log("Salad", salad);
@@ -88,7 +90,6 @@ console.log("Day 15: JavaScript Array Master Course");
     const carrot = salad[5];
 }
 
-
 {
     const salad = ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑"];
     const [tomato, mushroom, carrot] =  ['🍅', '🍄', '🥕'];
@@ -137,7 +138,7 @@ console.log(mySaaladCopy); // ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "
 
 mySalad === mySaaladCopy; // false
 }
-*/
+
 
 // Swapping
 {
@@ -149,7 +150,6 @@ let second = '🙂';
 console.log(first);  // '🙂'
 console.log(second); // '😔'
 }
-
 
 // Merge
 
@@ -281,8 +281,8 @@ console.log(arr1)
 
     //names.splice(1, 0, 'zack');
 
-    names.splice(2, 1, "zack");
-    console.log(names);
+    console.log(names.splice(2, 1, "zack"));// ['bob']
+    console.log(names); // ['tom', 'alex', 'zack']
 }
 
 // at()
@@ -396,7 +396,7 @@ console.log(arr1)
     // {key: "value"} // object
     // [1,2,3] // array
 
-    const arr_like = { 0: "I", 1: "am", 2: "array-like", length: 3 };
+    const arr_like = { 0: "I", 1: "am", 2: "array-like", length: 3 }; //length does not auto update
 
     console.log(arr_like);
 
